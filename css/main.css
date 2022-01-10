@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Floane', 'MalgunGothic';
+    src: url('../font/Floane-Bold.woff') format('woff'),
+        url('../font/MalgunGothic-_1_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family:  "MalgunGothic";
+    font-size: 16px;
+    line-height: 24px;
+    color: #433a34;
+    min-width: 1420px;
+}
+/*header*/
+.nav ul li a{display:block;
+	text-align:center;
+    padding: 48px 79px;}
+
+
+.header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 120px;
+}
+.logo{
+    float: left;
+    padding-top: 37.5px;
+}
+.nav ul li{
+    float: left;
+    font-size: 20px;
+    color: #514940;
+    
+}
+
+/*호버시 효과주기*/
+.nav ul li:hover{
+    color: #b5a296;
+    transition: all 0.5s;
+}
+
+.logo1{
+    position: relative;
+    width: 206px;
+    height: 45px;
+}
+.logo2{
+    position: absolute;
+    top: 37.5px;
+    left: 292px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.logo:hover .logo2{
+    opacity: 1;
+}
+.login_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.login_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 339px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon1:hover .login_icon2{
+    opacity: 1;
+}
+.cart_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.cart_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 291px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon2:hover .cart_icon2{
+    opacity: 1;
+}
+
+
+
+
+/*효과주기*/
+#header{position:fixed;
+    z-index: 9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:120px;}	
+
+    /**/
+
+.nav ul{
+    float: left;
+}
+.menu ul li{
+    float: left;
+    color: #514940;
+}
+.menu ul li:nth-child(2){
+    padding-left: 23px;
+}
+.menu ul{
+    float: right;
+    padding-top: 47.5px;
+}
+#main_banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+#main_banner h1{
+    padding: 297px;
+    font-size: 44px;
+    line-height: 74px;
+    color: #edeae4;
+}
+
+/*about helios*/
+#about_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#about{
+    width: 100%;
+    background:url(../images/main_paper_bg1.png) no-repeat center top;
+    height: 1094px;
+}
+#about_inner .img{
+    float: left;
+    padding-top: 208px;
+    padding-left: 124px;
+}
+#about_inner .text{
+    float: right;
+    padding-top: 408px;
+    padding-right: 96px;
+}
+#about_inner .text h1{
+    font-size: 34.5px;
+    color: #846854;
+    font-family: "Floane";
+    letter-spacing: 4px;
+}
+#about_inner .text p{
+    font-size: 18.16px;
+    color: #7e726a;
+    line-height: 39.66px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+}
+.btn1{
+    font-size: 17px;
+    color: #b0a59c;
+    background: url(../images/view.png) no-repeat 27% 66%; 
+}
+.btn1:hover{
+    background: url(../images/view.png) no-repeat 30% 66%; 
+}
+
+
+
+/*our brand*/
+#brand{
+    width: 100%;
+    background: url(../images/main_paper_bg2.png) no-repeat center top;
+    height: 1406px;
+}
+#brand_inner{
+    margin: 0 auto;
+    width: 1320px;
+    margin-top: 203px;
+}
+.bg{
+    width: 680px;
+    height: 514px;
+    background-color: #dfd7c7;
+    position: relative;
+    margin-left: 171px;
+}
+.img1{
+    position: absolute;
+    top: 88px;
+    left: 494px;
+}
+.img2{
+    position: absolute;
+    top: 247px;
+    left: 46px;
+}
+#brand h1{
+    font-size: 38px;
+    color: #846854;
+    padding-bottom: 200px;
+    text-align: center;
+    font-family: "Floane";
+    letter-spacing: 4px;
+    margin-top: 70px;
+}
+#brand h2, #brand h4{
+    font-size: 46px;
+    color: #99877a;
+    font-family: "Floane";
+    letter-spacing: 4px;
+}
+#brand h2{
+    padding: 123px 0 26px 125px;
+}
+.natural{
+    padding-left: 290px;
+}
+#brand h3{
+    padding-left: 804px;
+    padding-top: 68px;
+    line-height: 38px;
+    color: #766a61;
+}
+.btn2{
+    padding-left: 990px;
+    padding-top: 10px;
+    font-size: 17px;
+    color: #b3a79f;
+    font-weight: bold;
+    background: url(../images/view.png) no-repeat 83.5% 77%;
+}
+.btn2:hover{
+    background: url(../images/view.png) no-repeat 84.5% 77%;
+}
+
+/*helios best*/
+.best{
+    padding-top: 320px !important;
+}
+#slide{
+    height: 622.75px;
+    width: 100%;
+    overflow: hidden;
+}
+.slide_inner{
+    width: 200%;
+    animation: rotate 10s linear infinite;
+}
+.slide_inner img{
+    float: left;
+    width: 50%;
+}
+@keyframes rotate{
+    0%{margin-left: 0;}
+    100%{margin-left: -100%;}
+}
+/*new product*/
+#new h1{
+    font-size: 38px;
+    color: #846854;
+    padding-bottom: 53px;
+    padding-top: 172px;
+    font-family: "Floane";
+    letter-spacing: 4px;
+}
+#new{
+    width: 100%;
+    height: 1743px;
+    text-align: center;
+    background: url(..//images/main_paper_bg3.png) no-repeat center top;
+}
+#new_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#new ul li{
+    float: left;
+    position: relative;
+}
+
+.text_box{
+    background: rgba(81, 73, 64, 0.5);
+    width: 100%;
+    height: 355px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.view{
+    padding-top: 157px;
+    color: white !important;
+    font-size: 33px !important;
+    font-family: "Floane";
+    letter-spacing: 3px;
+}
+
+/*처음에 text_box가 안보이게 만듬*/
+.text_box{
+    opacity: 0;
+    transition: all 1s;
+}
+/*hover시에 text_box가 보이게 만듬*/
+#new ul li:hover .text_box{
+    opacity: 1;
+}
+/**/
+.product1, .product2 {
+    height: 653px;
+}
+#new ul li:nth-child(2){
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+#new h2{
+    font-size: 20px;
+    padding-bottom: 29px;
+    color: #846854;
+}
+#new h3{
+    padding-top: 20px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    color: #846854;
+    font-family: "Floane";
+    letter-spacing: 2px;
+}
+#new p{
+    font-size: 15px;
+    color: #977963;
+}
+
+/*helios promotion*/
+.swiper{
+    margin: 0 auto;
+    width: 1320px;
+}
+#arrow_img h1{
+    text-align: center;
+    font-size: 38px;
+    color: #846854;
+    padding-top: 150px;
+    padding-bottom: 77px;
+    font-family: "Floane";
+    letter-spacing: 4px;
+}
+#arrow_img{width:100%; margin:0 auto;
+    background: url(..//images/main_paper_bg4.png) no-repeat center top;
+    height: 764px;
+    overflow: hidden;/*창크기 줄였을때 화살표가 줄어들지 않게?*/}
+
+    /*호버시 이동*/
+.swiper_slide{
+    width: 620px;
+    height: 336px;
+    position: relative;
+}
+
+.text_box2{
+    background:rgba(81, 73, 64, 0.5);
+    width:100%;
+    height:336px;
+    text-align:center;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.text_box2 p{
+    padding-top: 137px;
+}
+/*처음에 text_box가 안보이게 만듦.*/
+.text_box2{
+    opacity:0;
+    transition:all 1s;
+}
+
+/*hover시에 text_box가 보이게 만듦.*/
+.swiper-slide:hover .text_box2{
+    opacity: 1;
+}
+
+/*화살표 밖으로 + 이미지로 화살표 변환*/
+
+.position{width: 1420px; margin: 0 auto; position: relative;}/*화살표의 기준이 되는 박스*/
+.card_img{width:1256px; margin:0 auto;}/*마진오토 기준등은 원하는 크기에 따라 달라집니다!*/
+.card_img_next{right:0;}
+.card_img_prev{left:0;}
+/*화살표를 이미지로 변경*/
+.card_img_next:after{content:url(../images/page_right.png);}
+.card_img_prev:after{content:url(../images/page_left.png);}
+.card_img_next, .card_img_prev{width:30px; height:63px;/*화살표 이미지크기와 동일하게 설정*/}
+
+
+
+/*footer*/
+#footer{
+    height: 182px;
+    background-color: #7a7468;
+}
+.footer_inner{
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+#footer p{
+    font-size: 11px;
+    color: #d4d2cf;
+    padding-top: 43px;
+    padding-bottom: 22px;
+}
+
+/*top버튼*/
+.fixed_box{
+    width:51px;
+    position:fixed;
+    right:50px;
+    bottom:20px;
+    display: inline-block;
+}
+
